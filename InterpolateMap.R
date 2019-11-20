@@ -26,7 +26,7 @@ source_data("https://raw.githubusercontent.com/torrem/SDM/master/Data/USDepth.RD
 
  IntMap <-function(x, years,transform=c(sqrt, log, none),xlim,ylim, res=0.03){
 
-x = d
+     d = x
 d = subset(d, year>=years[1] & year<= years[2]) # take just the most recent years
 
 if(transform=='sqrt'){
